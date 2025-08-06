@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="scientificCalculator.css"/>
+    <script src="scientificCalculator.js"></script>
+</head>
+<body>
+    <div id="outer" align="center">
+        <input type="text" id="res" placeholder="Result" readonly/>
+        <input type="number" id="n1" placeholder="Enter Value of X"/>
+        <input type="number" id="n2" placeholder="Enter Value of Y"/>
+        <div id="ops" align="center">
+            <div id="row1" class="container">
+                <input type="button" class="bttn" id="add" value="+" onclick="add()"/>
+                <input type="button" class="bttn" id="sub" value="-" onclick="sub()"/>
+                <input type="button" class="bttn" id="mul" value="*" onclick="mul()"/>
+                <input type="button" class="bttn" id="div" value="/" onclick="div()"/>
+            </div>
+            <div id="row2" class="container">
+                <input type="button" class="bttn" id="mod" value="%" onclick="mod()"/>
+                <input type="button" class="bttn" id="fact" value="X!" onclick="fact()"/>
+                <input type="button" class="bttn" id="inv" value="1/X" onclick="inv()"/>
+                <input type="button" class="bttn" id="sqr" value="X&#178;" onclick="sqr()"/>
+            </div>
+            <div id="row3" class="container">
+                <input type="button" class="bttn" id="cube" value="X&#179;" onclick="cube()"/>
+                <input type="button" class="bttn" id="pow" value="X&#x02B8;" onclick="pow()"/>
+                <input type="button" class="bttn" id="sqrt" value="&radic;X" onclick="sqrt()"/>
+                <input type="button" class="bttn" id="cubert" value="&#8731;X" onclick="cubert()"/>
+            </div>
+            <div id="row4" class="container">
+                <input type="button" class="bttn" id="root" value="&#x02B8;&radic;X" onclick="root()"/>
+                <input type="button" class="bttn" id="log" value="log X" onclick="log()"/>
+                <input type="button" class="bttn" id="ln" value="ln X" onclick="ln()"/>
+                <input type="button" class="bttn" id="pow10" value="10&#x02E3;" onclick="pow10()"/>
+            </div>
+            <div id="row5" class="container">
+                <input type="button" class="bttn" id="sin" value="sin(X)" onclick="sin()"/>
+                <input type="button" class="bttn" id="cos" value="cos(X)" onclick="cos()"/>
+                <input type="button" class="bttn" id="tan" value="tan(X)" onclick="tan()"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
